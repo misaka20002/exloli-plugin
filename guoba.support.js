@@ -8,9 +8,9 @@ export function supportGuoba() {
         pluginInfo: {
             name: 'exloli-plugin',
             title: '萝莉漫画插件',
-            author: ['@CikeyQi', '@erzaozi'],
-            authorLink: ['https://github.com/CikeyQi', 'https://github.com/erzaozi'],
-            link: 'https://github.com/erzaozi/exloli-plugin',
+            author: ['@CikeyQi', '@erzaozi', '@misaka20002'],
+            authorLink: ['https://github.com/CikeyQi', 'https://github.com/erzaozi', 'https://github.com/misaka20002'],
+            link: 'https://github.com/misaka20002/exloli-plugin',
             isV3: true,
             isV2: false,
             showInMenu: true,

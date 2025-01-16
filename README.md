@@ -1,4 +1,4 @@
-![exloli-plugin](https://socialify.git.ci/erzaozi/exloli-plugin/image?description=1&font=Raleway&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)
+![exloli-plugin](https://socialify.git.ci/misaka20002/exloli-plugin/image?description=1&font=Raleway&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)
 
 # ExLOLI-PLUGIN 🍑
 
@@ -90,7 +90,7 @@ console.log('Cookie已复制到剪切板')
 
 如果你喜欢这个项目，请不妨点个 Star🌟，这是对开发者最大的动力， 当然，你可以对我 [爱发电](https://afdian.net/a/sumoqi) 赞助，呜咪~❤️
 
-有意见或者建议也欢迎提交 [Issues](https://github.com/erzaozi/exloli-plugin/issues) 和 [Pull requests](https://github.com/erzaozi/exloli-plugin/pulls)。
+有意见或者建议也欢迎提交 [Issues](https://github.com/misaka20002/exloli-plugin/issues) 和 [Pull requests](https://github.com/misaka20002/exloli-plugin/pulls)。
 
 ## 许可证
 

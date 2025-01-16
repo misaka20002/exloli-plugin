@@ -136,7 +136,7 @@ export class update extends plugin {
 
     let end = ''
     end =
-      '更多详细信息，请前往github查看\nhttps://github.com/erzaozi/exloli-plugin/commits/main'
+      '更多详细信息，请前往github查看\nhttps://github.com/misaka20002/exloli-plugin/commits/main'
 
     log = await this.makeForwardMsg(`exloli-plugin更新日志，共${line}条`, log, end)
 
