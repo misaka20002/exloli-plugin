@@ -5,14 +5,15 @@ push_pic: false
 # 是否保存本地
 local_save: false
 # ex账户
-ex_account:
-  ipb_member_id: ''
-  ipb_pass_hash: ''
-  igneous: ''
-  sk: ''
-  sl: "dm_2"
+ex_account_ck: ""
+# ex_account:
+#   ipb_member_id: ''
+#   ipb_pass_hash: ''
+#   igneous: ''
+#   sk: ''
+#   sl: "dm_2"
 # 过滤标签
-category: 
+category:
   - NonH
 # 搜索参数
 search_param:

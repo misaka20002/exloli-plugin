@@ -88,41 +88,50 @@ export function supportGuoba() {
                     },
                 },
                 {
-                    field: "ex_account.ipb_member_id",
-                    label: "ipb_member_id",
-                    bottomHelpMessage: "里站必填",
+                    field: "ex_account_ck",
+                    label: "Cookie",
+                    bottomHelpMessage: "里站ck必填",
                     component: "Input",
                     componentProps: {
-                        placeholder: '请输入ipb_member_id',
+                        placeholder: 'ipb_member_id=xxx; ipb_pass_hash=xxx; yay=xxx; igneous=xxx; sk=xxx',
                     },
                 },
-                {
-                    field: "ex_account.ipb_pass_hash",
-                    label: "ipb_pass_hash",
-                    bottomHelpMessage: "里站必填",
-                    component: "Input",
-                    componentProps: {
-                        placeholder: '请输入ipb_pass_hash',
-                    },
-                },
-                {
-                    field: "ex_account.sk",
-                    label: "sk",
-                    bottomHelpMessage: "里站必填",
-                    component: "Input",
-                    componentProps: {
-                        placeholder: '请输入sk',
-                    },
-                },
-                {
-                    field: "ex_account.igneous",
-                    label: "igneous",
-                    bottomHelpMessage: "里站必填",
-                    component: "Input",
-                    componentProps: {
-                        placeholder: '请输入igneous',
-                    },
-                },
+                // {
+                //     field: "ex_account.ipb_member_id",
+                //     label: "ipb_member_id",
+                //     bottomHelpMessage: "里站必填",
+                //     component: "Input",
+                //     componentProps: {
+                //         placeholder: '请输入ipb_member_id',
+                //     },
+                // },
+                // {
+                //     field: "ex_account.ipb_pass_hash",
+                //     label: "ipb_pass_hash",
+                //     bottomHelpMessage: "里站必填",
+                //     component: "Input",
+                //     componentProps: {
+                //         placeholder: '请输入ipb_pass_hash',
+                //     },
+                // },
+                // {
+                //     field: "ex_account.sk",
+                //     label: "sk",
+                //     bottomHelpMessage: "里站必填",
+                //     component: "Input",
+                //     componentProps: {
+                //         placeholder: '请输入sk',
+                //     },
+                // },
+                // {
+                //     field: "ex_account.igneous",
+                //     label: "igneous",
+                //     bottomHelpMessage: "里站必填",
+                //     component: "Input",
+                //     componentProps: {
+                //         placeholder: '请输入igneous',
+                //     },
+                // },
                 {
                     component: "Divider",
                     label: "Exloli 推送配置",

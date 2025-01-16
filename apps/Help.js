@@ -120,7 +120,7 @@ export class Help extends plugin {
           },
           {
             icon: 9,
-            title: '#?exloli设置(sk|id|hash|igneous)',
+            title: '#?exloli设置ck[Your Cookie]',
             desc: '设置里站cookie'
           },
           {

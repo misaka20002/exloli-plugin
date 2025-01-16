@@ -31,7 +31,7 @@ export class Setting extends plugin {
                     fnc: 'savePic',
                 },
                 {
-                    reg: '^#?exloli设置(sk|id|hash|igneous)(.*)$',
+                    reg: '^#?exloli设置(sk|id|hash|igneous|ck)(.*)$',
                     fnc: 'setCookie',
                 },
                 {
@@ -146,20 +146,24 @@ export class Setting extends plugin {
             e.reply('臭萝莉控滚开啊！变态！！')
             return true
         }
-        const value = e.msg.replace(/^#?exloli设置(sk|id|hash|igneous)/, '').trim()
+        const value = e.msg.replace(/^#?exloli设置(sk|id|hash|igneous|ck)/, '').trim()
         let config = Config.getConfig()
-        if (e.msg.includes("sk")) {
-            config.ex_account.sk = value
-            await e.reply("sk已保存")
-        } else if (e.msg.includes("id")) {
-            config.ex_account.ipb_member_id = value
-            await e.reply("ipb_member_id已保存")
-        } else if (e.msg.includes("hash")) {
-            config.ex_account.ipb_pass_hash = value
-            await e.reply("ipb_pass_hash已保存")
-        } else {
-            config.ex_account.igneous = value
-            await e.reply("igneous已保存")
+        // if (e.msg.includes("sk")) {
+        //     config.ex_account.sk = value
+        //     await e.reply("sk已保存")
+        // } else if (e.msg.includes("id")) {
+        //     config.ex_account.ipb_member_id = value
+        //     await e.reply("ipb_member_id已保存")
+        // } else if (e.msg.includes("hash")) {
+        //     config.ex_account.ipb_pass_hash = value
+        //     await e.reply("ipb_pass_hash已保存")
+        // } else if (e.msg.includes("igneous")) {
+        //     config.ex_account.igneous = value
+        //     await e.reply("igneous已保存")
+        // } else
+        if (e.msg.includes("ck")) {
+            config.ex_account_ck = value
+            e.reply("里站Cookie已保存:\n" + value)
         }
         Config.setConfig(config)
         return true
@@ -305,7 +309,7 @@ export class Setting extends plugin {
             return true;
         }
         let config = Config.getConfig()
-        const msg = e.msg.replace(/^#?exloli设置代理地址/,'').trim()
+        const msg = e.msg.replace(/^#?exloli设置代理地址/, '').trim()
         const checkAdd = /^(((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)):(6553[0-5]|655[0-2][0-9]|65[0-4][0-9]{2}|6[0-4][0-9]{3}|[1-5][0-9]{4}|[1-9][0-9]{1,3}|[0-9])$/
         const address = msg.match(checkAdd)
         if (address) {

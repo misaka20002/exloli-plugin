@@ -55,10 +55,10 @@ export default class ExClient {
     }
 
     get header() {
-        const cookie = Config.getConfig().ex_account
+        // const cookie = Config.getConfig().ex_account
+        const cookieStr = Config.getConfig().ex_account_ck
         if (this.isEx) {
-            const cookieStr = Object.entries(cookie).map(([k, v]) => `${k}=${v}`).join(';')
-logger.mark(`[Exloli-Plugin]Cookie:${cookieStr}`)
+            // const cookieStr = Object.entries(cookie).map(([k, v]) => `${k}=${v}`).join(';')
             return { ...this.headerWithoutCookie, "Cookie": cookieStr }
         } else return this.headerWithoutCookie
     }
