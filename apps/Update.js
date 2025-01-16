@@ -213,17 +213,27 @@ export class update extends plugin {
     }
 
     /** 制作转发内容 */
-    if (this.e.isGroup) {
+    if (this.e.group?.makeForwardMsg) {
       forwardMsg = await this.e.group.makeForwardMsg(forwardMsg)
-    } else {
+    } else if (this.e?.friend?.makeForwardMsg) {
       forwardMsg = await this.e.friend.makeForwardMsg(forwardMsg)
+    } else {
+      return msg.join('\n')
     }
 
+    let dec = 'exloli-plugin 更新日志'
     /** 处理描述 */
-    forwardMsg.data = forwardMsg.data
-      .replace(/\n/g, '')
-      .replace(/<title color="#777777" size="26">(.+?)<\/title>/g, '___')
-      .replace(/___+/, `<title color="#777777" size="26">${title}</title>`)
+    if (typeof (forwardMsg.data) === 'object') {
+      let detail = forwardMsg.data?.meta?.detail
+      if (detail) {
+        detail.news = [{ text: dec }]
+      }
+    } else {
+      forwardMsg.data = forwardMsg.data
+        .replace(/\n/g, '')
+        .replace(/<title color="#777777" size="26">(.+?)<\/title>/g, '___')
+        .replace(/___+/, `<title color="#777777" size="26">${dec}</title>`)
+    }
 
     return forwardMsg
   }
